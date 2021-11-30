@@ -22,8 +22,8 @@ A sample code for using Textract to detect texts is as following:
 ```
 !aws textract detect-document-text --document '{"S3Object":{"Bucket":"bucket","Name":"document"}}
 ```
-you will get a json output that contains the detected word, texttype, and confidence level. You can see the json output in the project [link](https://webpage-final-kz.s3.amazonaws.com/final.html).
-Now if you use Python SDK for deploying Textract. Here are some codes that will come handy. First import AWS SDK for Python(Boto3)
+you will get a json output that contains the detected word, texttype, and confidence level. Since it's a really long output, you can check the json output in the project [link](https://webpage-final-kz.s3.amazonaws.com/final.html).
+Now if you use Python SDK for deploying Textract. Here are some codes that will come handy. First import AWS SDK for Python(Boto3):
 ```
 import boto3
 ```
@@ -31,7 +31,15 @@ Next, we create an instance `client` of the client object in the `boto3` package
 ```
 textract=boto3.client('textract')
 ```
-
-
+Now whenever you call `textract` it will invoke the service in Python. A sample will be:
+```
+textract.detect_document_text(    
+    Document={
+        'S3Object': {
+            'Bucket': bName,
+            'Name': fName
+        }
+    })
+```
 
 
