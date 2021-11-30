@@ -13,4 +13,10 @@ The diagram illustrates the overall outline of what AWS services were utilized i
 The user first uploads the document using the Amazon Simple Storage Service (S3). Once the document is in the web bucket, it could then be accessed by Amazon SageMaker, the primary tool to train and deploy machine learning models in AWS. Through the Jupyter notebook hosted within the EC2 T3 instance, the user uses the command line interface to pass the data to Amazon Textract. Upon extraction, the text is transformed and stored once again for the user to view.
 
 ### Sample Code for Using Textract
-To get started with Textract, you need first follow the instructions [here](https://docs.aws.amazon.com/textract/latest/dg/setting-up.html) to set up the environment for running Textract on your AWS.
+To get started with Textract, you need first follow the instructions [here](https://docs.aws.amazon.com/textract/latest/dg/setting-up.html) to set up the environment for running Textract on your AWS. Then you could use [AWS SageMaker](https://aws.amazon.com/cn/sagemaker/), initiate a notebook instance, then use the juypter notebook in it. 
+
+A sample code for using Textract to detect texts is as following:
+```
+!aws textract detect-document-text --document '{"S3Object":{"Bucket":"bucket","Name":"document"}}
+```
+you will get a json output that contains the detected word, texttype, and confidence level.
