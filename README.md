@@ -5,7 +5,7 @@
 [Amazon Textract](https://aws.amazon.com/cn/textract/) is a machine learning (ML) service on [AWS](https://aws.amazon.com/) that uses OCR to automatically extract text, handwriting, and data from scanned documents such as PDFs. To get started using Amazon Textract on AWS, follow the instructions [here](https://docs.aws.amazon.com/textract/latest/dg/getting-started.html).
 
 ### Introduction
-This project focuses on testing the performance of deploying Textract in various situations. We test the service on rotated images, handwritten names, as well as documents written in languages other than English. To look at our project follow the [link](https://webpage-final-kz.s3.amazonaws.com/final.html).
+This project focuses on testing the performance of deploying Textract in various situations. We test the service on rotated images, handwritten names, as well as documents written in languages other than English. To take a look at our project, follow the [link](https://webpage-final-kz.s3.amazonaws.com/final.html).
 
 ### Architecture Overview
 ![archi](https://webpage-kairan.s3.amazonaws.com/archi.jpg)
@@ -41,5 +41,15 @@ textract.detect_document_text(
         }
     })
 ```
-
+### Data for testing 
+Here's a table for a quick look at the data we use for testing:
+| Data | Description |
+|  ---  | -----------| 
+| [rotate](https://github.com/ka4on/QTM350-Final-Project/tree/main/rotate) |contains images that rotated by different angles|
+| [handwritten](https://github.com/ka4on/QTM350-Final-Project/tree/main/handwritten) | contains 100 images of handwritten names used for testing |
+|[true_result.csv](https://github.com/ka4on/QTM350-Final-Project/blob/main/true_result.csv) | a csv file contains all 100 printed names, used for validation |
+|[chinese.jpg](https://github.com/ka4on/QTM350-Final-Project/blob/main/chinese.jpg)|an image written in chinese, serves to check if textract could recognize languages other than english|
+|[edgecase](https://github.com/ka4on/QTM350-Final-Project/tree/main/edgecase)|partially flipped/rotated images to test textract performance in edge cases|
+|[reverse1](https://github.com/ka4on/QTM350-Final-Project/tree/main/reverse1)|images of text in increasing length, used for validation|
+|[reverse2](https://github.com/ka4on/QTM350-Final-Project/tree/main/reverse2)|images of text in increasing length but with rotation, used for test|
 
