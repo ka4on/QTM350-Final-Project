@@ -64,5 +64,5 @@ Here's a table for the data we used for testing, all are available in the github
 |[reverse2](https://github.com/ka4on/QTM350-Final-Project/tree/main/reverse2)|images of text in increasing length but with rotation, used for test|
 
 ***
-### Deploy Textract in your way
+### Deploy Textract in Your Way
 You could follow our project [link](https://webpage-final-kz.s3.amazonaws.com/final.html) and use the data provided in the github repo to replicate our experiments or you could deploy **Textract** the way you want, especially in combination with our AWS ML services. A good start would be checking out this wonderful [github page](https://github.com/aws-samples/amazon-textract-code-samples) that includes many **Textract** code examples. There are codes that uses **Textract** along with Amazon Translate/Comprehend, which may come handy in real life situations.
