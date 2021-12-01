@@ -1,9 +1,8 @@
 # QTM350-Final-Project
-## - Performance of Textract on Rotated Images and Handwritten text
-[project webpage](https://webpage-final-kz.s3.amazonaws.com/final.html) 
+## - Performance of Textract on Rotated Images and Handwritten text 
 
+![textract](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2019/10/10/site-merch_Textract_SocialMedia_2.png)
 ### **Amazon Textract**
-
 [Amazon Textract](https://aws.amazon.com/cn/textract/) is a machine learning (ML) service on [AWS](https://aws.amazon.com/) that uses OCR to automatically extract text, handwriting, and data from scanned documents such as PDFs. To get started using Amazon Textract on AWS, follow the instructions [here](https://docs.aws.amazon.com/textract/latest/dg/getting-started.html).
 
 ***
@@ -53,7 +52,7 @@ textract.detect_document_text(
 ***
 ### **Data for testing**
 
-Here's a table for a quick look at the data we used for testing, all are available in the github repo:
+Here's a table for the data we used for testing, all are available in the github repo:
 | Data | Description |
 |  ---  | -----------| 
 | [rotate](https://github.com/ka4on/QTM350-Final-Project/tree/main/rotate) |contains images that rotated by different angles|
