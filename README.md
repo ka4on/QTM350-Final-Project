@@ -62,7 +62,7 @@ Here's a table for the data we used for testing, all are available in the github
 |[edgecase](https://github.com/ka4on/QTM350-Final-Project/tree/main/edgecase)|partially flipped/rotated images to test textract performance in edge cases|
 |[reverse1](https://github.com/ka4on/QTM350-Final-Project/tree/main/reverse1)|images of text in increasing length, used for validation|
 |[reverse2](https://github.com/ka4on/QTM350-Final-Project/tree/main/reverse2)|images of text in increasing length but with rotation, used for test|
-
+|[last test](https://github.com/ka4on/QTM350-Final-Project/tree/main/last%20test)|images used for tests in the section of "One Last Test" in the project, contains flipped and partially rotated texts|
 ***
 ### Deploy Textract in Your Own Way
 You could follow our project [link](https://webpage-final-kz.s3.amazonaws.com/final.html) and use the data provided in the github repo to replicate our experiments, or you could deploy **Textract** the way you want, especially in combination with our AWS ML services. A good start would be checking out this wonderful [github page](https://github.com/aws-samples/amazon-textract-code-samples) that includes many **Textract** code examples. There are codes that use **Textract** along with Amazon Translate/Comprehend, which may come handy in real life situations.
