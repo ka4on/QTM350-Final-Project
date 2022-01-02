@@ -15,7 +15,7 @@ This project focuses on testing the performance of deploying Textract in various
 
 ### **Architecture Overview**
 
-![archi](https://webpage-kairan.s3.amazonaws.com/archi.jpg)
+![archi](https://github.com/ka4on/QTM350-Final-Project/blob/main/archi.jpg)
 
 The diagram illustrates the overall outline of what AWS services were utilized in this architecture. 
 The user first uploads the document using the Amazon Simple Storage Service (S3). Once the document is in the web bucket, it could then be accessed by Amazon SageMaker, the primary tool to train and deploy machine learning models in AWS. Through the Jupyter notebook hosted within the EC2 T3 instance, the user uses the command line interface to pass the data to Amazon Textract. Upon extraction, the text is transformed and stored once again for the user to view.
