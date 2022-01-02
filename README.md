@@ -9,7 +9,7 @@
 
 ### **Introduction**
 
-This project focuses on testing the performance of deploying Textract in various situations. We test the service on rotated images, handwritten names, as well as documents written in languages other than English. To take a look at our project, follow the [link](https://webpage-final-kz.s3.amazonaws.com/final.html).
+This project focuses on testing the performance of deploying Textract in various situations. We test the service on rotated images, handwritten names, as well as documents written in languages other than English. To take a look at our project, follow the [link](https://github.com/ka4on/QTM350-Final-Project/blob/main/final-textract.ipynb).
 
 ***
 
